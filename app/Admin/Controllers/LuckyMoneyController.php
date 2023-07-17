@@ -20,6 +20,9 @@ class LuckyMoneyController extends AdminController
     {
         return Grid::make(new LuckyMoney(), function (Grid $grid) {
             $grid->setActionClass(Grid\Displayers\Actions::class);
+
+            $grid->model()->orderBy('id','desc');
+
             $grid->column('id')->sortable();
             $grid->column('sender_id');
             $grid->column('amount');

@@ -19,6 +19,7 @@ class TgUserController extends AdminController
     {
         return Grid::make(new TgUser(), function (Grid $grid) {
             $grid->setActionClass(Grid\Displayers\Actions::class);
+            $grid->model()->orderBy('id','desc');
             $grid->column('id')->sortable();
             $grid->column('username');
             $grid->column('first_name');

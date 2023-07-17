@@ -1,8 +1,8 @@
 ## 后台基于dcat-admin
 
-演示站点： [tg.umaske.com](https://tg.umaske.com/)
-账号：admin 
-密码：tgred
+演示站点： [tg.umaske.com/admin](https://tg.umaske.com/admin)
+账号：test 
+密码：test123
 
 ## telegram机器人扩展使用nutgram
 
