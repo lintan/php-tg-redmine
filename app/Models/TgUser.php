@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\DateTrait;
+
 use Illuminate\Database\Eloquent\Model;
 
 class TgUser extends Model
@@ -18,6 +19,7 @@ class TgUser extends Model
         'status',
         'invite_user',
     ];
-
-
 }
+
+
+

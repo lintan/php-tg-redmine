@@ -16,6 +16,24 @@ Route::group([
 
     $router->resource('users', 'UserController');
 
+
+    $router->resource('tgusers', 'TgUserController');
+    $router->resource('luckmoney', 'LuckyMoneyController');
+    $router->resource('luckhistory', 'LuckyHistoryController');
+    $router->resource('configs', 'ConfigController');
+    $router->resource('groups', 'AuthGroupController');
+
+
+
+
+
+
+
+
+
+
+
+
     // 布局示例
     $router->get('layout', 'LayoutController@index');
     // 报表示例
