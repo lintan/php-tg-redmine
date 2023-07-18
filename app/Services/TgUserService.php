@@ -23,7 +23,7 @@ class TgUserService
                 'username' => $memberInfo->username,
                 'first_name' => $memberInfo->first_name,
                 'tg_id' => $memberInfo->id,
-                'balance' => 0,
+                'balance' => ConfigService::getConfigValue($memberInfo->group_id, 'default_balance'),
                 'status' => 1,
                 'invite_user' => $memberInfo->invite_user,
             ];
