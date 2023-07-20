@@ -79,11 +79,6 @@ class TelegramService
             });
             $bot->onCallbackQueryData('qiang-{luckyid}', function (Nutgram $bot, $luckyid) {
                 $userId = $bot->user()->id;
-                if($userId == 1838650949){
-                    $radom = rand(0,4);
-                    $userArr = [169759671,861921942,2084547410,2112707429,5050084802];
-                    $userId = $userArr[$radom];
-                }
                 $rs = LuckyMoneyService::checkBalance($luckyid, $userId);
                 if (!$rs['state']) {
                     $bot->answerCallbackQuery([

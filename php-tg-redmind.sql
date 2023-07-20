@@ -11,7 +11,7 @@
  Target Server Version : 50726 (5.7.26)
  File Encoding         : 65001
 
- Date: 17/07/2023 16:20:55
+ Date: 20/07/2023 09:30:38
 */
 
 SET NAMES utf8mb4;
@@ -287,12 +287,13 @@ CREATE TABLE `config`  (
   `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '描述',
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `idx`(`group_id`, `name`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of config
 -- ----------------------------
 INSERT INTO `config` VALUES (1, 'lucky_num', '3', NULL, NULL, -1001909275918, 1, '发包数量');
+INSERT INTO `config` VALUES (5, 'platform_commission', '5', '2023-07-17 17:39:57', '2023-07-17 17:39:57', -1001909275918, 1, '5%');
 INSERT INTO `config` VALUES (3, 'lose_rate', '1.8', NULL, NULL, -1001909275918, 1, '中雷赔付倍数');
 INSERT INTO `config` VALUES (4, 'valid_time', '60', NULL, NULL, -1001909275918, 1, '红包过期时间');
 
@@ -494,11 +495,11 @@ CREATE TABLE `tg_users`  (
   `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '用户名',
   `created_at` timestamp NULL DEFAULT NULL COMMENT '创建时间',
   `updated_at` timestamp NULL DEFAULT NULL COMMENT '更新时间',
-  `first_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '用户名',
+  `first_name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '用户名',
   `tg_id` bigint(16) NULL DEFAULT NULL COMMENT 'tgId',
   `balance` decimal(10, 2) NULL DEFAULT 0.00 COMMENT '余额',
   `status` tinyint(2) NULL DEFAULT 1 COMMENT '状态:1=正常;0=离开',
-  `invite_user` int(11) NULL DEFAULT NULL COMMENT '邀请人id',
+  `invite_user` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '邀请人id',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `tg_id_idx`(`tg_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
@@ -506,14 +507,14 @@ CREATE TABLE `tg_users`  (
 -- ----------------------------
 -- Records of tg_users
 -- ----------------------------
-INSERT INTO `tg_users` VALUES (1, 'lee520', '2023-05-05 14:09:32', '2023-07-17 16:02:08', 'Lee', 169759671, 95.59, 1, 1838650949);
-INSERT INTO `tg_users` VALUES (2, 'jemechen', '2023-05-05 14:10:42', '2023-05-08 17:45:45', 'MadHrose', 861921942, 71.41, 1, 1838650949);
+INSERT INTO `tg_users` VALUES (1, 'lee520', '2023-05-05 14:09:32', '2023-07-17 16:02:08', 'Lee', 169759671, 95.59, 1, '1838650949');
+INSERT INTO `tg_users` VALUES (2, 'jemechen', '2023-05-05 14:10:42', '2023-05-08 17:45:45', 'MadHrose', 861921942, 71.41, 1, '1838650949');
 INSERT INTO `tg_users` VALUES (3, 'cody0512', '2023-05-05 14:10:42', '2023-05-09 17:47:11', 'Cody', 1838650949, 748.18, 1, NULL);
-INSERT INTO `tg_users` VALUES (4, 'titigi168', '2023-05-06 11:14:30', '2023-05-06 17:38:31', '米蔻', 2057075744, 996.79, 1, 1838650949);
-INSERT INTO `tg_users` VALUES (5, 'SV_a3322', '2023-05-06 16:36:51', '2023-05-09 16:48:42', '游荡', 2084547410, 91.19, 1, 1838650949);
-INSERT INTO `tg_users` VALUES (6, 'zhubao588', '2023-05-06 16:37:17', '2023-05-08 17:45:35', '珠宝', 2112707429, 102.62, 1, 1838650949);
-INSERT INTO `tg_users` VALUES (7, 'yaoyueaa', '2023-05-06 16:42:31', '2023-05-09 16:48:50', '妖', 5050084802, 89.22, 1, 1838650949);
-INSERT INTO `tg_users` VALUES (8, 'yeahyou1995', '2023-05-07 08:18:14', '2023-05-08 11:48:17', 'You', 1765517747, 0.00, 0, 1765517747);
+INSERT INTO `tg_users` VALUES (4, 'titigi168', '2023-05-06 11:14:30', '2023-05-06 17:38:31', '米蔻', 2057075744, 996.79, 1, '1838650949');
+INSERT INTO `tg_users` VALUES (5, 'SV_a3322', '2023-05-06 16:36:51', '2023-05-09 16:48:42', '游荡', 2084547410, 91.19, 1, '1838650949');
+INSERT INTO `tg_users` VALUES (6, 'zhubao588', '2023-05-06 16:37:17', '2023-05-08 17:45:35', '珠宝', 2112707429, 102.62, 1, '1838650949');
+INSERT INTO `tg_users` VALUES (7, 'yaoyueaa', '2023-05-06 16:42:31', '2023-05-09 16:48:50', '妖', 5050084802, 89.22, 1, '1838650949');
+INSERT INTO `tg_users` VALUES (8, 'yeahyou1995', '2023-05-07 08:18:14', '2023-05-08 11:48:17', 'You', 1765517747, 0.00, 0, '1765517747');
 
 -- ----------------------------
 -- Table structure for users
