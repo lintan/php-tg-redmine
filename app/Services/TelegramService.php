@@ -65,7 +65,11 @@ class TelegramService
             $bot->onText('(1$|查$|余额$)', function (Nutgram $bot, $ac) {
                 if ($ac == 1 || $ac == '查' || $ac == '余额' || $ac == '查余额') {
                     $userInfo = TgUserService::getUserById($bot->user()->id);
-                    $bot->sendMessage("[ <code>{$bot->user()->first_name}</code> ] 余额：{$userInfo->balance}  U", ['parse_mode' => ParseMode::HTML]);
+                    if(!$userInfo){
+                        $bot->sendMessage("用户未注册");
+                    }else{
+                        $bot->sendMessage("[ <code>{$bot->user()->first_name}</code> ] 余额：{$userInfo->balance}  U", ['parse_mode' => ParseMode::HTML]);
+                    }
                 }
             });
 
