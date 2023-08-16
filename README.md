@@ -1,3 +1,14 @@
+## 系统基于基于PHP的laravel框架搭建
+
+#### 版本
+
+9.19
+
+#### 配置
+
+将.env.example 改名为 .env ，修改里面的参数即可
+
+
 ## 后台基于dcat-admin
 
 演示站点： [tg.umaske.com/admin](https://tg.umaske.com/admin)
