@@ -6,7 +6,7 @@ use App\Models\LuckyHistory;
 use App\Models\LuckyMoney;
 use App\Models\TgUser;
 use Illuminate\Support\Facades\Log;
-
+//>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
 class TgUserService
 {
 
@@ -66,6 +66,7 @@ class TgUserService
 
     }
     public static function getTodayData($id,$chatId){
+        //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
         $info = TgUser::query()->where('tg_id', $id)->first();
         if (!$info) {
             return ['state'=>0,'msg'=>'用户不存在'];

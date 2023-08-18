@@ -46,7 +46,7 @@ if (! function_exists('user_admin_config')) {
 }
 /**
  * 红包雷算法
- *
+ *>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
  * @param float $totalAmount 红包总金额
  * @param int $totalCount 红包总个数
  * @param float $minAmount 每个红包最小金额
@@ -58,7 +58,7 @@ function red_envelope($totalAmount, $totalCount, $minAmount, $maxAmount)
     $result = array();
     $leftAmount = $totalAmount; // 剩余金额
     $leftCount = $totalCount; // 剩余个数
-//    $averageAmount = $totalAmount / $totalCount; // 平均金额
+    //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
 
     for ($i = 1; $i <= $totalCount; $i++) {
         if ($leftCount == 1) {
@@ -123,5 +123,6 @@ function common_reply_markup($chatId,$InlineKeyboardMarkup=null){
 
 }
 function get_photo($groupId){
+    //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
     return 'AgACAgUAAxkBAAIB22RaFre9HAQm--m1mOPT5zdCkn0KAAO4MRtQYNFWPCW3_FTkX2gBAAMCAANtAAMvBA';
 }

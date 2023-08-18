@@ -19,12 +19,12 @@ class TelegramService
 
         $bot->group(GroupVerify::class, function (Nutgram $bot) {
 
-            // Your handlers here
+            // >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
             // Called when a message contains the command "/start someParameter"
 //            $bot->onCommand('start {parameter}', function (Nutgram $bot, $parameter) {
 //                $bot->sendMessage("The parameter is {$parameter}");
 //            });
-            // ex. called when a message contains "My name is Mario"
+            // >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
 
             $bot->onText('(发[包]*)*([0-9]+)[-/]([0-9]+)', function (Nutgram $bot, $ac, $num, $mine) {
                 if ($num < 5) {
@@ -60,7 +60,7 @@ class TelegramService
 
                     $bot->sendPhoto($photo, $data);
                 }
-
+                //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
             });
             $bot->onText('(1$|查$|余额$)', function (Nutgram $bot, $ac) {
                 if ($ac == 1 || $ac == '查' || $ac == '余额' || $ac == '查余额') {
@@ -175,7 +175,7 @@ class TelegramService
                     'show_alert' => true
                 ]);
             });
-
+            //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
             $bot->onNewChatMembers(function (Nutgram $bot) {
                 $groupId = $bot->message()->chat->id;
                 $Member = $bot->message()->new_chat_members[0];
@@ -203,7 +203,7 @@ class TelegramService
                 }
 
             });
-            // Called on command "/help"
+            // >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
         });
     }
 

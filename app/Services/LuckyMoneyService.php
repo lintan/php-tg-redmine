@@ -24,7 +24,7 @@ class LuckyMoneyService
         $totalCount = $luckyTotal; // 红包总个数
         $minAmount = 0.01; // 每个红包最小金额
         $maxAmount = $totalAmount / $totalCount * 2; // 每个红包最大金额
-
+        //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
         $redEnvelopes = red_envelope($totalAmount, $totalCount, $minAmount, $maxAmount);
         $insert = [
             'sender_id' => $senderId,

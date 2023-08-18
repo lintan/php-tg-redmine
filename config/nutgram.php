@@ -1,7 +1,7 @@
 <?php
 
 return [
-    // The Telegram BOT api token
+    // The Telegram BOT api token >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
     'token' => env('TELEGRAM_BOT_TOKEN'),
 
     // if the webhook mode must validate the incoming IP range is from a telegram server

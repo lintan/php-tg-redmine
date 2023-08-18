@@ -12,7 +12,7 @@ class ConfigController extends AdminController
 {
     /**
      * Make a grid builder.
-     *
+     *>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
      * @return Grid
      */
     protected function grid()
@@ -26,10 +26,10 @@ class ConfigController extends AdminController
             $grid->column('remark');
             $grid->column('created_at');
             $grid->column('updated_at')->sortable();
-        
+
             $grid->filter(function (Grid\Filter $filter) {
                 $filter->equal('id');
-        
+
             });
         });
     }
@@ -69,7 +69,7 @@ class ConfigController extends AdminController
             $form->text('group_id');
             $form->text('admin_id');
             $form->text('remark');
-        
+
             $form->display('created_at');
             $form->display('updated_at');
         });
