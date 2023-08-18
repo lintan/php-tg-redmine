@@ -124,5 +124,6 @@ function common_reply_markup($chatId,$InlineKeyboardMarkup=null){
 }
 function get_photo($groupId){
     //>本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
+//    开源地址:https://github.com/lintan/php-tg-redmine
     return 'AgACAgUAAxkBAAIB22RaFre9HAQm--m1mOPT5zdCkn0KAAO4MRtQYNFWPCW3_FTkX2gBAAMCAANtAAMvBA';
 }
