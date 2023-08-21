@@ -54,10 +54,3 @@
 >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
 >开源地址:https://github.com/lintan/php-tg-redmine 
 
-## 赞赏
-
-TRC20
->TUSdxeN8baKCFXD3MVzh7Qpi1SPe7HBDX7
-
-BSC(BEP20)
->0x3106e7855eb870e4d402a08c1fd57cf18a2cbe8a
