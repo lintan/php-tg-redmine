@@ -4,8 +4,9 @@
 开源地址:https://github.com/lintan/php-tg-redmine
 
 #### 版本
+php8.0
 
-9.19
+laravel 9.19
 
 #### 配置安装
 
