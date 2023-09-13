@@ -7,16 +7,24 @@
 
 9.19
 
-#### 配置
+#### 配置安装
 
-将.env.example 改名为 .env ，修改里面的参数即可
+1. laravel扩展需要自行安装，命令：`composer install`
+2. 导入sql
+3. 将.env.example 改名为 .env ，修改里面的参数即可（修改数据库信息，修改token）
+4. 后台链接：域名+admin   (例如：http://www.xxx.com/admin)
+5. 默认账号密码：admin/admin
+6. 配置机器人
+
 
 
 ## 后台基于dcat-admin
 
-演示站点： [tg.umaske.com/admin](https://tg.umaske.com/admin)
+演示站点： [https://www.tgbot.cyou/admin](https://www.tgbot.cyou/admin)
 账号：test 
-密码：test123
+密码：（找我要）[@cody](https://t.me/cody0512)
+
+（测试账号请勿随意修改数据）
 
 ## telegram机器人扩展使用nutgram
 
