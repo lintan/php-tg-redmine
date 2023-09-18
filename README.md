@@ -26,6 +26,9 @@ laravel 9.19
 
 账号：test   密码：test123
 （测试账号请勿随意修改数据）
+>演示群：[https://t.me/+GNTD0sZnRJkxYWY1](https://t.me/+GNTD0sZnRJkxYWY1)
+
+--------------------------------------------------------------------------------------
 
 高级版演示站点：[https://www.tgbot.cyou/admin](https://www.tgbot.cyou/admin)
 
