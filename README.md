@@ -21,7 +21,13 @@ laravel 9.19
 
 ## 后台基于dcat-admin
 
-演示站点： [https://www.tgbot.cyou/admin](https://www.tgbot.cyou/admin)
+
+开源免费版演示站点： [https://demo.tgbot.cyou/admin/](https://demo.tgbot.cyou/admin/)
+
+账号：test   密码：test123
+（测试账号请勿随意修改数据）
+
+高级版演示站点：[https://www.tgbot.cyou/admin](https://www.tgbot.cyou/admin)
 
 账号：test 
 
@@ -29,9 +35,9 @@ laravel 9.19
 
 （测试账号请勿随意修改数据）
 
-## telegram机器人扩展使用nutgram
+>高级版演示群组：[@hongbaolei123](https://t.me/hongbaolei123)
 
-演示群组：[@hongbaolei123](https://t.me/hongbaolei123)
+
 
 
 ## 机器人玩法说明：
