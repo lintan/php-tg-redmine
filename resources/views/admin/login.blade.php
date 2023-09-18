@@ -134,7 +134,7 @@
 
             <div class="login-box">
                 <div class="login-logo mb-2">
-                    <h4 class="mt-0">让后台开发更简单</h4>
+                    <h4 class="mt-0">红包雷后台</h4>
                     <p class="login-box-msg mt-1 mb-1">{{ __('admin.welcome_back') }}</p>
                 </div>
                 <div class="card">
@@ -233,10 +233,10 @@
         <div class="content-front"></div>
         <div class="login-description">
             <p class="lead">
-                十分钟内构建一个功能完善的高颜值后台系统。
+                红包雷后台系统。
             </p>
             <p>
-                Dcat Admin
+                RedMine Admin
             </p>
         </div>
     </div>
