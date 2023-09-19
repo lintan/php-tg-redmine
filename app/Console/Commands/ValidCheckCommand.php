@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 
 use App\Models\AuthGroup;
 use App\Models\LuckyMoney;
+use App\Models\TgUser;
 use App\Services\ConfigService;
 use App\Services\LuckyMoneyService;
 use App\Services\TgUserService;
@@ -59,7 +60,9 @@ class ValidCheckCommand extends Command
                     $list = LuckyMoneyService::getLuckyHistory($item['id']);
                     $details = '';
                     $loseMoneyTotal = 0;
+                    $qiangTotal = 0;
                     foreach ($list as $key =>$val){
+                        $qiangTotal += $val['amount'];
                         if($val['is_thunder']!=1){
                             $details.= ($key+1).".[💵] <code>".round($val['amount'],2)."</code> U <code>".format_name($val['first_name'])."</code>\n";
                         }else{
@@ -67,6 +70,7 @@ class ValidCheckCommand extends Command
                             $loseMoneyTotal += $val['lose_money'];
                         }
                     }
+                    $shengyu = round($item['amount'] - $qiangTotal, 2);
                     $profit = $loseMoneyTotal - $item['amount'];
                     $profitTxt = $profit>=0?'+'.$profit:$profit;
                     $caption = "[ <code>" . format_name($item['sender_name']) . "</code> ]的红包已过期！\n
@@ -89,6 +93,7 @@ class ValidCheckCommand extends Command
                     ];
                     $rs = $bot->sendPhoto($photo, $data);
                     if($rs){
+                        TgUser::query()->where('tg_id', $item['sender_id'])->where('group_id', $item['chat_id'])->increment('balance', $shengyu);
                         LuckyMoney::query()->where('id',$item['id'])->update(['status'=>3,'updated_at'=>date('Y-m-d H:i:s')]);
                     }else{
                         Log::error('过期红包，发送失败');
