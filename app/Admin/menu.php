@@ -1,41 +1,41 @@
 <?php
 
 return [
-    [
-        'id'        => 'redmine',
-        'title'     => '红包雷管理',
-        'icon'      => 'feather icon-package',
-        'uri'       => '',
-        'parent_id' => 0,
-    ],
-    [
-        'id'        => 'redmine-config',
-        'title'     => '红包配置',
-        'icon'      => 'feather icon-settings',
-        'uri'       => 'configs',
-        'parent_id' => 'redmine',
-    ],
-    [
-        'id'        => 'redmine-group',
-        'title'     => '群组管理',
-        'icon'      => ' fa-group',
-        'uri'       => 'groups',
-        'parent_id' => 'redmine',
-    ],
-    [
-        'id'        => 'redmine-users',
-        'title'     => '用户管理',
-        'icon'      => ' fa-user',
-        'uri'       => 'tgusers',
-        'parent_id' => 'redmine',
-    ],
-    [
-        'id'        => 'redmine-luckmoney',
-        'title'     => '红包管理',
-        'icon'      => 'fa fa-shopping-bag',
-        'uri'       => 'luckmoney',
-        'parent_id' => 'redmine',
-    ],
+//    [
+//        'id'        => 'redmine',
+//        'title'     => '红包雷管理',
+//        'icon'      => 'feather icon-package',
+//        'uri'       => '',
+//        'parent_id' => 0,
+//    ],
+//    [
+//        'id'        => 'redmine-config',
+//        'title'     => '红包配置',
+//        'icon'      => 'feather icon-settings',
+//        'uri'       => 'configs',
+//        'parent_id' => 'redmine',
+//    ],
+//    [
+//        'id'        => 'redmine-group',
+//        'title'     => '群组管理',
+//        'icon'      => ' fa-group',
+//        'uri'       => 'groups',
+//        'parent_id' => 'redmine',
+//    ],
+//    [
+//        'id'        => 'redmine-users',
+//        'title'     => '用户管理',
+//        'icon'      => ' fa-user',
+//        'uri'       => 'tgusers',
+//        'parent_id' => 'redmine',
+//    ],
+//    [
+//        'id'        => 'redmine-luckmoney',
+//        'title'     => '红包管理',
+//        'icon'      => 'fa fa-shopping-bag',
+//        'uri'       => 'luckmoney',
+//        'parent_id' => 'redmine',
+//    ],
     /////////////////////////////////////////////////////
 //    [
 //        'id'        => 'layout',
