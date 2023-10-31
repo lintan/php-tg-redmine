@@ -90,6 +90,8 @@ INSERT INTO `admin_menu` VALUES (9, 8, 9, '红包配置', 'fa-wrench', 'configs'
 INSERT INTO `admin_menu` VALUES (10, 8, 10, '群组管理', 'fa-group', 'groups', '', 1, '2023-10-24 11:27:59', '2023-10-24 11:27:59');
 INSERT INTO `admin_menu` VALUES (11, 8, 11, '用户管理', 'fa-user-o', 'tgusers', '', 1, '2023-10-24 11:28:29', '2023-10-24 11:28:29');
 INSERT INTO `admin_menu` VALUES (12, 8, 12, '红包管理', 'fa-shopping-cart', 'luckmoney', '', 1, '2023-10-24 11:28:54', '2023-10-24 11:28:54');
+INSERT INTO `admin_menu` VALUES (13, 0, 13, 'Operation Log', '', 'auth/operation-logs', 'dcat-admin.operation-log', 1, '2023-10-25 10:25:48', '2023-10-25 10:25:48');
+
 
 -- ----------------------------
 -- Table structure for admin_operation_log
@@ -165,6 +167,12 @@ INSERT INTO `admin_permissions` VALUES (8, '红包配置', 'conifg', '', '/confi
 INSERT INTO `admin_permissions` VALUES (9, '群组管理', 'groups', '', '/groups*', 9, 7, '2023-10-24 11:34:37', '2023-10-24 11:34:37');
 INSERT INTO `admin_permissions` VALUES (10, '用户管理', 'tgusers', '', '/tgusers*', 10, 7, '2023-10-24 11:36:07', '2023-10-24 11:36:14');
 INSERT INTO `admin_permissions` VALUES (11, '红包管理', 'luckmoney', '', '/luckmoney*', 11, 7, '2023-10-24 11:36:35', '2023-10-24 11:36:45');
+INSERT INTO `admin_permissions` VALUES (12, '群组编辑', 'group_edit', 'GET', '/groups/*/edit', 12, 9, '2023-10-25 10:19:02', '2023-10-25 10:19:02');
+INSERT INTO `admin_permissions` VALUES (13, '群组更新', 'group_update', 'POST,PUT,PATCH', '/groups/*', 13, 9, '2023-10-25 10:19:53', '2023-10-25 10:19:53');
+INSERT INTO `admin_permissions` VALUES (14, '新增群组', 'group_add', 'GET', '/groups/create', 14, 9, '2023-10-25 10:20:24', '2023-10-25 10:20:24');
+INSERT INTO `admin_permissions` VALUES (15, '群组保存', 'group_save', 'POST', '/groups', 15, 9, '2023-10-25 10:21:01', '2023-10-25 10:21:01');
+INSERT INTO `admin_permissions` VALUES (16, '群组列表', 'group_list', 'GET', '/groups', 16, 9, '2023-10-25 10:21:50', '2023-10-25 10:22:01');
+INSERT INTO `admin_permissions` VALUES (17, '删除群组', 'group_del', 'DELETE', '/groups/*', 17, 9, '2023-10-25 10:23:48', '2023-10-25 10:23:48');
 
 -- ----------------------------
 -- Table structure for admin_role_menu

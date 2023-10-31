@@ -76,7 +76,7 @@ class TelegramService
             $bot->onCallbackQueryData('balance', function (Nutgram $bot) {
                 $userInfo = TgUserService::getUserById($bot->user()->id);
                 $bot->answerCallbackQuery([
-                    'text' => "[ <code>{$bot->user()->first_name}</code> ] \n-----------------------------\n余额：{$userInfo->balance}  U",
+                    'text' => "[ {$bot->user()->first_name} ] \n-----------------------------\n余额：{$userInfo->balance}  U",
                     'parse_mode' => ParseMode::HTML,
                     'show_alert' => true
                 ]);
