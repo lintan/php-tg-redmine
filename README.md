@@ -17,6 +17,13 @@ laravel 9.19
 5. 默认账号密码：admin/admin
 6. 命令行运行 `php artisan message`
 
+#### 命令
+1. 群信息，获取群id和用户id
+2. help，获取帮助
+3. 发包10-1或10-1或发10-1，表示发包金额和雷
+4. 1，查，余额，查询余额
+5. /register，注册
+
 
 
 ## 后台基于dcat-admin
