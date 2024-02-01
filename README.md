@@ -80,5 +80,7 @@ laravel 9.19
 
 >本项目免费开源，有问题联系 [@cody](https://t.me/cody0512) (不常登，请耐心等候)
 >
->开源地址:https://github.com/lintan/php-tg-redmine 
+>开源地址:https://github.com/lintan/php-tg-redmine
+>
+>！！！另外还有红包接龙，红包牛牛，trx能量,trx兑换，pc28，快三等机器人，接tg机器人定制开发，欢迎咨询
 
