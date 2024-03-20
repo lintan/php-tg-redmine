@@ -1,12 +1,9 @@
-## 系统基于基于PHP的laravel框架搭建
+## 搭建说明
 
 项目完整可运行，搭建需要有php代码基础以及telegram机器人相关知识。
 开源地址:https://github.com/lintan/php-tg-redmine
 
-#### 版本
-php8.0
 
-laravel 9.19
 
 #### 配置安装
 
@@ -15,7 +12,6 @@ laravel 9.19
 3. 将.env.example 改名为 .env ，修改里面的参数即可（修改数据库信息，修改token）
 4. 后台链接：域名+admin   (例如：http://www.xxx.com/admin)
 5. 默认账号密码：admin/admin
-6. 命令行运行 `php artisan message`
 
 #### 命令
 1. 群信息，获取群id和用户id
@@ -26,7 +22,7 @@ laravel 9.19
 
 
 
-## 后台基于dcat-admin
+## 演示站点
 
 
 开源免费版演示站点： [https://demo.tgbot.cyou/admin/](https://demo.tgbot.cyou/admin/)
