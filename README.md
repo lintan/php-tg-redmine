@@ -77,7 +77,7 @@
 3. 输入用户名后， 机器人就申请成功了。 如果你只是要一个可以用的机器人， 到这步就够了。 其中的 bot token: 1287833603:AAGmx9hQq6ViT3km0_77z8psBGqUKfdpSHY 是最重要的部分， 不要让人看到， 否则别人可以控制你的机器人。
 
 
->本项目免费开源，搭建需自己研究学习! 作者=> [@cody](https://t.me/cody0512) (不常登，请耐心等候)
+>本项目免费开源，搭建需自己研究学习! 作者=> [@cody](https://t.me/cody0101) (不常登，请耐心等候)
 >
 >开源地址:https://github.com/lintan/php-tg-redmine
 >
