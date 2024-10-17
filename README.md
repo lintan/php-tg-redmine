@@ -15,6 +15,7 @@
 3. 将.env.example 改名为 .env ，修改里面的参数即可（修改数据库信息，修改token）
 4. 后台链接：域名+admin   (例如：http://www.xxx.com/admin)
 5. 默认账号密码：admin/admin
+6. php artisan message 运行程序
 
 #### 命令
 1. 群信息，获取群id和用户id
