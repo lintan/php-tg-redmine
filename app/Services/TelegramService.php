@@ -48,7 +48,10 @@ class TelegramService
                 //添加红包
                 $luckyId = LuckyMoneyService::add($sendUserId,$bot->message()->from->first_name, $num, $mine, $bot->message()->chat->id, $luckyTotal);
                 if ($luckyId) {
-                    $photo = get_photo($bot->message()->chat->id);
+
+                    $path = public_path('images/hb.jpg');
+                    $photo = fopen($path, 'r+');
+
                     $InlineKeyboardMarkup = InlineKeyboardMarkup::make()->addRow(
                         InlineKeyboardButton::make("🧧抢红包[{$luckyTotal}/0]总{$num}U 💥雷{$mine}", callback_data: "qiang-" . $luckyId),
                     );
