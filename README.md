@@ -41,7 +41,7 @@
 
 账号：test 
 
-密码：（联系->[@cody](https://t.me/cody0101)）
+密码：（联系->[@cody](https://t.me/cody1777)）
 
 （测试账号请勿随意修改数据）
 
