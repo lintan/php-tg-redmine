@@ -110,5 +110,5 @@
 >
 >开源地址:https://github.com/lintan/php-tg-redmine
 >
->！！！telegram机器人定制开发。红包接龙，红包牛牛，TG卖号店铺，PC28，快三,摇骰子，TRX能量-兑换-TG会员三合一，高级记账，PC28,等机器人，，欢迎咨询
+
 
